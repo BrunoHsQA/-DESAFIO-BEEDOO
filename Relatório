@@ -1,0 +1,95 @@
+Cenário 2
+BUG-001: Validação de Campos de Texto
+Descrição:
+Os campos "Nome do Curso", "Descrição do Curso" e "Instrutor" permitem a entrada de números e caracteres especiais.
+
+Impacto:
+Diminui a integridade e a profissionalidade dos dados cadastrados.
+
+Severidade:
+Média
+
+Passos para Reproduzir:
+
+Acessar a página de cadastro de cursos.
+Preencher os campos "Nome do Curso", "Descrição do Curso" e "Instrutor" com números e caracteres especiais.
+Clicar no botão "Cadastrar curso".
+Verificar se os dados são aceitos e o curso é cadastrado.
+Resultado Esperado:
+Os campos devem aceitar apenas texto alfabético e rejeitar números e caracteres especiais.
+
+Resultado Atual:
+Os campos aceitam números e caracteres especiais.
+
+BUG-002: Links Suspeitos na Modalidade Online
+Descrição:
+Ao escolher a modalidade "Online", é possível inserir qualquer link, incluindo links suspeitos.
+
+Impacto:
+Pode comprometer a segurança dos usuários, expondo-os a phishing e roubo de dados.
+
+Severidade:
+Alta
+
+Passos para Reproduzir:
+
+Acessar a página de cadastro de cursos.
+Preencher os campos obrigatórios.
+Escolher a modalidade "Online".
+Inserir um link suspeito no campo de URL.
+Clicar no botão "Cadastrar curso".
+Verificar se o curso é cadastrado com o link suspeito.
+Resultado Esperado:
+O sistema deve validar os links inseridos para garantir que sejam seguros.
+
+Resultado Atual:
+O sistema aceita qualquer link, incluindo links suspeitos.
+
+BUG-003: Curso Cadastrado com Informações Faltando
+Descrição:
+É possível cadastrar um curso mesmo com informações obrigatórias faltando.
+
+Impacto:
+Diminui a integridade dos dados cadastrados, causando possíveis inconsistências e confusão para os usuários.
+
+Severidade:
+Alta
+
+Passos para Reproduzir:
+
+Acessar a página de cadastro de cursos.
+Deixar um ou mais campos obrigatórios em branco.
+Clicar no botão "Cadastrar curso".
+Verificar se o curso é cadastrado mesmo com informações faltando.
+Resultado Esperado:
+O sistema deve impedir o cadastro de cursos com informações obrigatórias faltando e exibir uma mensagem de erro.
+
+Resultado Atual:
+O curso é cadastrado mesmo com informações obrigatórias faltando.
+
+Cenário 4
+
+BUG-004: Exclusão de Curso Não Refletida Imediatamente
+Descrição:
+Após excluir um curso, ele continua aparecendo na lista de cursos, mesmo após atualizar a página. O curso só é definitivamente excluído ao apagar o banco de dados.
+
+Impacto:
+Causa confusão para o usuário, que pode pensar que a exclusão não foi realizada corretamente.
+
+Severidade:
+Alta
+
+Passos para Reproduzir:
+
+Acessar a página de listagem de cursos.
+Clicar no botão "Excluir" ao lado de um curso.
+Atualizar a página.
+Verificar se o curso ainda aparece na lista.
+Confirmar que o curso só é removido após a exclusão manual no banco de dados.
+Resultado Esperado:
+O curso deve ser removido da lista de cursos imediatamente após a exclusão.
+
+Resultado Atual:
+O curso ainda aparece na lista até que o banco de dados seja atualizado manualmente.
+
+Este formato detalha cada bug individualmente, fornecendo uma estrutura clara para a equipe de desenvolvimento corrigir os problemas.
