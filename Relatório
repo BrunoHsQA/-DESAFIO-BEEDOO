@@ -1,4 +1,6 @@
-Cenário 2
+UserStory 2 Cadastrar Cursos
+
+Cenário 3
 BUG-001: Validação de Campos de Texto
 Descrição:
 Os campos "Nome do Curso", "Descrição do Curso" e "Instrutor" permitem a entrada de números e caracteres especiais.
@@ -45,6 +47,7 @@ O sistema deve validar os links inseridos para garantir que sejam seguros.
 Resultado Atual:
 O sistema aceita qualquer link, incluindo links suspeitos.
 
+# Cenário 2
 BUG-003: Curso Cadastrado com Informações Faltando
 Descrição:
 É possível cadastrar um curso mesmo com informações obrigatórias faltando.
@@ -67,8 +70,8 @@ O sistema deve impedir o cadastro de cursos com informações obrigatórias falt
 Resultado Atual:
 O curso é cadastrado mesmo com informações obrigatórias faltando.
 
-Cenário 4
-
+UserStory 4
+Cenário 1
 BUG-004: Exclusão de Curso Não Refletida Imediatamente
 Descrição:
 Após excluir um curso, ele continua aparecendo na lista de cursos, mesmo após atualizar a página. O curso só é definitivamente excluído ao apagar o banco de dados.
@@ -92,4 +95,3 @@ O curso deve ser removido da lista de cursos imediatamente após a exclusão.
 Resultado Atual:
 O curso ainda aparece na lista até que o banco de dados seja atualizado manualmente.
 
-Este formato detalha cada bug individualmente, fornecendo uma estrutura clara para a equipe de desenvolvimento corrigir os problemas.
