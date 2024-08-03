@@ -1,5 +1,8 @@
 # DESAFIO BEEDOO
 
+# Link com As histórias de usuários,cenários e casos de testes.
+##: https://docs.google.com/spreadsheets/d/1TaP_sU3hCkNrt1k86xKfzjrjcUY-s-MWZ6OTKiqCKOU/edit?usp=sharing
+
 ## Decisões para Criar User Stories
 
 ### Análise do Módulo de Cursos
