@@ -1,6 +1,7 @@
 UserStory 2 Cadastrar Cursos
 
-Cenário 3
+Cenário 3:
+
 BUG-001: Validação de Campos de Texto
 Descrição:
 Os campos "Nome do Curso", "Descrição do Curso" e "Instrutor" permitem a entrada de números e caracteres especiais.
@@ -22,6 +23,8 @@ Os campos devem aceitar apenas texto alfabético e rejeitar números e caractere
 
 Resultado Atual:
 Os campos aceitam números e caracteres especiais.
+
+Fluxo de exceção:
 
 BUG-002: Links Suspeitos na Modalidade Online
 Descrição:
@@ -47,7 +50,8 @@ O sistema deve validar os links inseridos para garantir que sejam seguros.
 Resultado Atual:
 O sistema aceita qualquer link, incluindo links suspeitos.
 
-# Cenário 2
+Cenário 2:
+
 BUG-003: Curso Cadastrado com Informações Faltando
 Descrição:
 É possível cadastrar um curso mesmo com informações obrigatórias faltando.
@@ -71,7 +75,8 @@ Resultado Atual:
 O curso é cadastrado mesmo com informações obrigatórias faltando.
 
 UserStory 4
-Cenário 1
+Cenário 1:
+
 BUG-004: Exclusão de Curso Não Refletida Imediatamente
 Descrição:
 Após excluir um curso, ele continua aparecendo na lista de cursos, mesmo após atualizar a página. O curso só é definitivamente excluído ao apagar o banco de dados.
